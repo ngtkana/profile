@@ -2,36 +2,110 @@
 <html>
 <head>
 <title>ngtkana（ながたかな）のプロフィール</title>
+<style type="text/css">
+div.column {
+    max-width: 600px;
+    flex-direction: column;
+    margin: 0px auto;
+}
+div.profileHead {
+    flex-direction: column;
+    display: flex;
+    margin: 30pt auto 20pt;
+}
+img.profileHead_thumbNail {
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    top: 8px;
+    z-index: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    border-width: 2pt;
+    image-orientation: from-image;
+    margin: 0 auto 20pt;
+}
+p.profileHead_myName {
+    text-align: center;
+    color: dimgray;
+    font-size: 2rem;
+    margin: 0 auto 20pt;
+}
+p.profileHead_mySaying {
+    text-align: center;
+    color: dimgray;
+    font-size: .9rem;
+    margin: 0 auto;
+}
+a.profileItem {
+    text-decoration: none;
+    cursor: pointer;
+}
+ul.profileItem {
+    list-style: none;
+    padding-inline-start: 0;
+}
+li.profileItem {
+    border-radius: 20px;
+    padding: 12px;
+    background: #fcf8ed;
+    box-shadow: 0 2px 8px rgba(0 0 0 /15%);
+    margin-bottom: 1.5em;
+}
+h2.profileItem {
+    color: dimgray;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+}
+p.profileItem {
+    color: black;
+    margin: 0;
+}
+
+</style>
 </head>
+
 <body>
+<main>
+<div class="column">
+<div class="profileHead">
+<img class="profileHead_thumbNail" src="thumbnail.png">
+<p class="profileHead_myName">ngtkana（ながたかな）</p>
+<p class="profileHead_mySaying">ながたかなは長いですから、天才とお呼びください。</p>
+</div>
 
-<h1>ngtkana（ながたかな）のプロフィール</h1>
-<p>ながたかなは長いですから、天才とお呼びください。</p>
-
-<h2>歌い手活動</h2>
-<p>YouTube、ニコニコ動画にて、ngtkana というお名前で歌い手をしています。みなさまのご視聴、応援、コメント、チャンネル登録などが心の支えですので、よろしくお願いいたします。今後は歌配信もしたいのですが、合法的かつ迅速にオケを入手する方法がみつからず、二の足を踏んでおります。知見をお持ちの方はこっそり教えていただけると うれしいです。</p>
-<p>１曲だけなら聞いてあげてもという方のために、ゆうゆ様の『深海少女』の歌ってみた動画へのリンクを貼らせていただきます。</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NjemU151yb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<h2>競技プログラミング</h2>
-
-<p>今はからっきしなのですが、私は昔 AtCoder で戦っていました。最高レーティングは <b><font color=#FF8000>2487</font></b> でした。</p>
-<ul><li><a href="https://atcoder.jp/users/ngtkana">ngtkana - AtCoder</a></li></ul>
-
-<p>そのために作っていた Rust 1.42.0 向け競技プログラミング用ライブラリです。私の Rust を書ける程度はここではかり知れるかもしれません。</p>
-<ul><li><a href="https://github.com/ngtkana/ac-adapter-rs">ngtkana/ac-adapter-rs - GitHub</a></li></ul>
-
-<h2>運動</h2>
-<p>時々ランニングをしています。長距離が得意でして、ハーフマラソンのベストは 2:18 です。</p>
-
-<h2>ソフトウェア開発者としてのお仕事</h2>
-<p>このウェブページの出来をご覧いただけばわかるとおり、私は圧倒的な技術力を保持しており……というのは冗談でして、Web はあまり得意ではありません。私はキャディ株式会社さんにて、CAD アルゴリズムまわりのお仕事を中心に、開発に携わっております。最近は png, dxf, dwg, step などのファイルを読んで、社内の他の様々なプロダクトが使いやすい形にするプロダクトの開発にお熱です。得意な言語は Rust、いまお仕事で書いているのが Rust と F#、他に業務レベルで書けるのが C++、あまり期待しないでいただきたいのが Python3、C# といった感じです。</p>
-
-<h2>そのほかリンク</h2>
-
-<ul>
-<li><a href="https://twitter.com/ngtkana">ngtkana - Twitter</a>
-<li><a href="https://peing.net/ja/ngtkana">匿名で聞けちゃう！ながたかなさんの質問箱です | Peing -質問箱-</a>
+<ul class="profileItem">
+<a class="profileItem" href="https://www.youtube.com/channel/UC9amFw1nimUfDGAf746HYXQ"><li class="profileItem">
+    <h2 class="profileItem">YouTube</h2>
+    <p class="profileItem">お歌を歌っています。 </p>
+</li></a>
+<a class="profileItem" href="https://twitter.com/ngtkana"><li class="profileItem">
+    <h2 class="profileItem">Twitter</h2>
+    <p class="profileItem">これの依存症になっているみなさま、たくさんお話しましょう…！</p>
+</li></a>
+<a class="profileItem" href="https://peing.net/ja/ngtkana"><li class="profileItem">
+    <h2 class="profileItem">質問箱（Peing）</h2>
+    <p class="profileItem">なんでもお聞きください！</p>
+</li></a>
+<a class="profileItem" href="https://github.com/ngtkana"><li class="profileItem">
+    <h2 class="profileItem">GitHub</h2>
+    <p class="profileItem">お昼はソフトウェア開発をしています。Rust が得意です。</p>
+</li></a>
+<a class="profileItem" href="https://atcoder.jp/users/ngtkana"><li class="profileItem">
+    <h2 class="profileItem">AtCoder</h2>
+    <p class="profileItem">今はからっきしなのですが、当時の最高レーティングは <b><font color=#FF8000>2487</font></b> でした。</p>
+</li></a>
+<li class="profileItem"><iframe width="560" height="315" src="https://www.youtube.com/embed/NjemU151yb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+<li class="profileItem"><iframe width="560" height="315" src="https://www.youtube.com/embed/UIKsBMylENE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
 </ul>
+
+<h2>他、特技など</h2>
+<p>時々ランニングをしています。長距離が得意でして、ハーフマラソンのベストは 2:18 です。</p>
+<p>私はキャディ株式会社さんにて、CAD アルゴリズムまわりのお仕事を中心に、開発に携わっております。最近は png, dxf, dwg, step などのファイルを読んで、社内の他の様々なプロダクトが使いやすい形にするプロダクトの開発にお熱です。得意な言語は Rust、いまお仕事で書いているのが Rust と F#、他に業務レベルで書けるのが C++、あまり期待しないでいただきたいのが Python3、C# といった感じです。</p>
+<p>あの、決して CSS を書くのに疲れたなどということは決して、あの……</p>
+
+</div>
+</main>
 
 </html>
