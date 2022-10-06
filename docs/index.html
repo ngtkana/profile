@@ -3,38 +3,38 @@
 <head>
 <title>ngtkana（ながたかな）のプロフィール</title>
 <style type="text/css">
+body {
+    font-size: 8pt;
+}
 div.column {
-    max-width: 600px;
+    max-width: 480px;
     flex-direction: column;
     margin: 0px auto;
 }
 div.profileHead {
     flex-direction: column;
     display: flex;
-    margin: 30pt auto 20pt;
+    margin: 20pt auto 10pt;
 }
 img.profileHead_thumbNail {
     text-align: center;
-    width: 120px;
-    height: 120px;
-    top: 8px;
-    z-index: 0;
+    width: 90px;
+    height: 90px;
     background-color: transparent;
     border-radius: 50%;
     border-width: 2pt;
-    image-orientation: from-image;
-    margin: 0 auto 20pt;
+    margin: 0 auto 10pt;
 }
 p.profileHead_myName {
     text-align: center;
     color: dimgray;
-    font-size: 2rem;
-    margin: 0 auto 20pt;
+    font-size: 18pt;
+    margin: 0 auto 10pt;
 }
 p.profileHead_mySaying {
     text-align: center;
     color: dimgray;
-    font-size: .9rem;
+    font-size: 9pt;
     margin: 0 auto;
 }
 a.profileItem {
@@ -46,15 +46,15 @@ ul.profileItem {
     padding-inline-start: 0;
 }
 li.profileItem {
-    border-radius: 20px;
-    padding: 12px;
+    border-radius: 14px;
+    padding: 8px;
     background: #fcf8ed;
     box-shadow: 0 2px 8px rgba(0 0 0 /15%);
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 h2.profileItem {
     color: dimgray;
-    font-size: 1.4rem;
+    font-size: 12pt;
     font-weight: 700;
     margin: 0;
 }
@@ -62,7 +62,10 @@ p.profileItem {
     color: black;
     margin: 0;
 }
-
+iframe.profileItem_youtube {
+    width: 460px;
+    height: 259px;
+}
 </style>
 </head>
 
@@ -82,11 +85,11 @@ p.profileItem {
 </li></a>
 <a class="profileItem" href="https://twitter.com/ngtkana"><li class="profileItem">
     <h2 class="profileItem">Twitter</h2>
-    <p class="profileItem">これの依存症になっているみなさま、たくさんお話しましょう…！</p>
+    <p class="profileItem">これの依存症になっているみなさま、たくさんお話しましょう。お歌も聴けるかもです…！</p>
 </li></a>
 <a class="profileItem" href="https://peing.net/ja/ngtkana"><li class="profileItem">
     <h2 class="profileItem">質問箱（Peing）</h2>
-    <p class="profileItem">なんでもお聞きください！</p>
+    <p class="profileItem">なんでもお聞きください。受けて立ちましょう。</p>
 </li></a>
 <a class="profileItem" href="https://github.com/ngtkana"><li class="profileItem">
     <h2 class="profileItem">GitHub</h2>
@@ -96,8 +99,14 @@ p.profileItem {
     <h2 class="profileItem">AtCoder</h2>
     <p class="profileItem">今はからっきしなのですが、当時の最高レーティングは <b><font color=#FF8000>2487</font></b> でした。</p>
 </li></a>
-<li class="profileItem"><iframe width="560" height="315" src="https://www.youtube.com/embed/NjemU151yb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-<li class="profileItem"><iframe width="560" height="315" src="https://www.youtube.com/embed/UIKsBMylENE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+<li class="profileItem">
+    <iframe class="profileItem_youtube" width="560" height="315" src="https://www.youtube.com/embed/NjemU151yb4" title="深海少女 / covered by ngtkana【歌ってみた】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2 class="profileItem">深海少女</h2>
+</li>
+<li class="profileItem">
+    <iframe class="profileItem_youtube"  width="560" height="315" src="https://www.youtube.com/embed/UIKsBMylENE" title="さよならプリンセス / Kai【Covered by ngtkana】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2 class="profileItem">さよならプリンセス</h2>
+</li>
 </ul>
 
 <h2>他、特技など</h2>
